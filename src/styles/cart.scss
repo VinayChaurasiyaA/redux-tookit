@@ -1,0 +1,43 @@
+@import "colors";
+
+.cart {
+  height: 100vh;
+  // width: 100%;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  
+  > main {
+    padding: 2rem;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    > h1 {
+      color: $tertiary;
+      font: 100 1.2rem;
+    }
+  }
+  > aside {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $primary;
+    color: $tertiary;
+    border-radius: 100px 0 0 100px;
+    height: 100%;
+    width: 100%;
+    padding: 0.4rem;
+    box-shadow: -10px 0px 10px rgba($color: #000000, $alpha: 0.182);
+    >h4 {
+        margin: 1rem;
+        letter-spacing: 2px;
+        font: 100 0.2rem;
+        font-family: sans-serif;
+
+        &:last-of-type {
+            font-weight: 800;
+        }
+    }
+  }
+}

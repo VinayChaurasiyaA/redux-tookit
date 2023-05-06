@@ -1,0 +1,53 @@
+@import "colors";
+
+.cartitem {
+
+    background-color: $secondary;
+    margin: 2rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+    align-items: center;
+    border-radius: 5px;
+    // color: black;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        margin-right: 1rem;
+        border-radius: 5px;
+    }
+    >div {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        >button {
+            cursor: pointer;
+            border: none;
+            height: 30px;
+            width: 30px;
+            font-size: 1.2rem;
+            background-color: transparent;
+            // font: 100 1.2rem;
+        }
+        p{
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;            
+        }
+    }
+    >svg {
+        display: inline-block;
+        margin: auto;
+        cursor: pointer;
+        &:hover {
+            color: $primarydark;
+        }
+    }
+    >article {
+        margin-left: 1rem;
+    }
+}
